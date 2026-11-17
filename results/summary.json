@@ -1,0 +1,1946 @@
+{
+ "best": "cloudflare/clef-flash",
+ "n_common": 1001,
+ "summary": [
+  {
+   "model": "cloudflare/clef-flash",
+   "name": "Cloudflare Clef Flash",
+   "kind": "decision",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.955,
+   "ci": [
+    0.9404,
+    0.9662
+   ],
+   "macro_f1": 0.9549,
+   "invalid": 0,
+   "cost_per_1000": 0.0469,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 0.542,
+   "latency_p90_s": 1.228,
+   "confusions": [
+    [
+     "direct_debit_payment_not_recognised\u2192card_payment_not_recognised",
+     2
+    ],
+    [
+     "declined_transfer\u2192declined_card_payment",
+     2
+    ],
+    [
+     "pending_transfer\u2192balance_not_updated_after_bank_transfer",
+     2
+    ],
+    [
+     "get_disposable_virtual_card\u2192disposable_card_limits",
+     2
+    ],
+    [
+     "extra_charge_on_statement\u2192card_payment_fee_charged",
+     1
+    ]
+   ],
+   "vendor_macro_f1": 0.9093,
+   "ece": 0.083,
+   "top3": 0.991,
+   "coverage": [
+    {
+     "t": 0.0,
+     "coverage": 1.0,
+     "accuracy": 0.955,
+     "n": 1001
+    },
+    {
+     "t": 0.02,
+     "coverage": 1.0,
+     "accuracy": 0.955,
+     "n": 1001
+    },
+    {
+     "t": 0.04,
+     "coverage": 1.0,
+     "accuracy": 0.955,
+     "n": 1001
+    },
+    {
+     "t": 0.06,
+     "coverage": 1.0,
+     "accuracy": 0.955,
+     "n": 1001
+    },
+    {
+     "t": 0.08,
+     "coverage": 0.999,
+     "accuracy": 0.955,
+     "n": 1000
+    },
+    {
+     "t": 0.1,
+     "coverage": 0.999,
+     "accuracy": 0.955,
+     "n": 1000
+    },
+    {
+     "t": 0.12,
+     "coverage": 0.999,
+     "accuracy": 0.955,
+     "n": 1000
+    },
+    {
+     "t": 0.14,
+     "coverage": 0.998,
+     "accuracy": 0.956,
+     "n": 999
+    },
+    {
+     "t": 0.16,
+     "coverage": 0.998,
+     "accuracy": 0.956,
+     "n": 999
+    },
+    {
+     "t": 0.18,
+     "coverage": 0.997,
+     "accuracy": 0.9569,
+     "n": 998
+    },
+    {
+     "t": 0.2,
+     "coverage": 0.997,
+     "accuracy": 0.9569,
+     "n": 998
+    },
+    {
+     "t": 0.22,
+     "coverage": 0.996,
+     "accuracy": 0.9579,
+     "n": 997
+    },
+    {
+     "t": 0.24,
+     "coverage": 0.995,
+     "accuracy": 0.9588,
+     "n": 996
+    },
+    {
+     "t": 0.26,
+     "coverage": 0.994,
+     "accuracy": 0.9598,
+     "n": 995
+    },
+    {
+     "t": 0.28,
+     "coverage": 0.992,
+     "accuracy": 0.9617,
+     "n": 993
+    },
+    {
+     "t": 0.3,
+     "coverage": 0.99,
+     "accuracy": 0.9617,
+     "n": 991
+    },
+    {
+     "t": 0.32,
+     "coverage": 0.987,
+     "accuracy": 0.9636,
+     "n": 988
+    },
+    {
+     "t": 0.34,
+     "coverage": 0.985,
+     "accuracy": 0.9645,
+     "n": 986
+    },
+    {
+     "t": 0.36,
+     "coverage": 0.978,
+     "accuracy": 0.9683,
+     "n": 979
+    },
+    {
+     "t": 0.38,
+     "coverage": 0.975,
+     "accuracy": 0.9682,
+     "n": 976
+    },
+    {
+     "t": 0.4,
+     "coverage": 0.974,
+     "accuracy": 0.9682,
+     "n": 975
+    },
+    {
+     "t": 0.42,
+     "coverage": 0.97,
+     "accuracy": 0.9701,
+     "n": 971
+    },
+    {
+     "t": 0.44,
+     "coverage": 0.968,
+     "accuracy": 0.9711,
+     "n": 969
+    },
+    {
+     "t": 0.46,
+     "coverage": 0.966,
+     "accuracy": 0.9721,
+     "n": 967
+    },
+    {
+     "t": 0.48,
+     "coverage": 0.963,
+     "accuracy": 0.973,
+     "n": 964
+    },
+    {
+     "t": 0.5,
+     "coverage": 0.957,
+     "accuracy": 0.976,
+     "n": 958
+    },
+    {
+     "t": 0.52,
+     "coverage": 0.953,
+     "accuracy": 0.978,
+     "n": 954
+    },
+    {
+     "t": 0.54,
+     "coverage": 0.9481,
+     "accuracy": 0.9789,
+     "n": 949
+    },
+    {
+     "t": 0.56,
+     "coverage": 0.9441,
+     "accuracy": 0.9788,
+     "n": 945
+    },
+    {
+     "t": 0.58,
+     "coverage": 0.9371,
+     "accuracy": 0.9819,
+     "n": 938
+    },
+    {
+     "t": 0.6,
+     "coverage": 0.9361,
+     "accuracy": 0.9819,
+     "n": 937
+    },
+    {
+     "t": 0.62,
+     "coverage": 0.9331,
+     "accuracy": 0.9818,
+     "n": 934
+    },
+    {
+     "t": 0.64,
+     "coverage": 0.9251,
+     "accuracy": 0.9838,
+     "n": 926
+    },
+    {
+     "t": 0.66,
+     "coverage": 0.9141,
+     "accuracy": 0.9836,
+     "n": 915
+    },
+    {
+     "t": 0.68,
+     "coverage": 0.9111,
+     "accuracy": 0.9846,
+     "n": 912
+    },
+    {
+     "t": 0.7,
+     "coverage": 0.9071,
+     "accuracy": 0.9846,
+     "n": 908
+    },
+    {
+     "t": 0.72,
+     "coverage": 0.8961,
+     "accuracy": 0.9855,
+     "n": 897
+    },
+    {
+     "t": 0.74,
+     "coverage": 0.8851,
+     "accuracy": 0.9853,
+     "n": 886
+    },
+    {
+     "t": 0.76,
+     "coverage": 0.8761,
+     "accuracy": 0.9863,
+     "n": 877
+    },
+    {
+     "t": 0.78,
+     "coverage": 0.8651,
+     "accuracy": 0.9873,
+     "n": 866
+    },
+    {
+     "t": 0.8,
+     "coverage": 0.8442,
+     "accuracy": 0.9882,
+     "n": 845
+    },
+    {
+     "t": 0.82,
+     "coverage": 0.8322,
+     "accuracy": 0.9892,
+     "n": 833
+    },
+    {
+     "t": 0.84,
+     "coverage": 0.8012,
+     "accuracy": 0.9913,
+     "n": 802
+    },
+    {
+     "t": 0.86,
+     "coverage": 0.7662,
+     "accuracy": 0.9935,
+     "n": 767
+    },
+    {
+     "t": 0.88,
+     "coverage": 0.7183,
+     "accuracy": 0.9958,
+     "n": 719
+    },
+    {
+     "t": 0.9,
+     "coverage": 0.6424,
+     "accuracy": 0.9969,
+     "n": 643
+    },
+    {
+     "t": 0.92,
+     "coverage": 0.5085,
+     "accuracy": 0.9961,
+     "n": 509
+    },
+    {
+     "t": 0.94,
+     "coverage": 0.3457,
+     "accuracy": 1.0,
+     "n": 346
+    },
+    {
+     "t": 0.96,
+     "coverage": 0.1479,
+     "accuracy": 1.0,
+     "n": 148
+    },
+    {
+     "t": 0.98,
+     "coverage": 0.015,
+     "accuracy": 1.0,
+     "n": 15
+    }
+   ]
+  },
+  {
+   "model": "cloudflare/clef",
+   "name": "Cloudflare Clef",
+   "kind": "decision",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.9441,
+   "ci": [
+    0.928,
+    0.9567
+   ],
+   "macro_f1": 0.9438,
+   "invalid": 0,
+   "cost_per_1000": 0.3972,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 0.694,
+   "latency_p90_s": 1.924,
+   "confusions": [
+    [
+     "declined_transfer\u2192declined_card_payment",
+     2
+    ],
+    [
+     "balance_not_updated_after_cheque_or_cash_deposit\u2192top_up_by_cash_or_cheque",
+     2
+    ],
+    [
+     "unable_to_verify_identity\u2192verify_my_identity",
+     2
+    ],
+    [
+     "pending_transfer\u2192balance_not_updated_after_bank_transfer",
+     2
+    ],
+    [
+     "card_delivery_estimate\u2192card_arrival",
+     1
+    ]
+   ],
+   "vendor_macro_f1": 0.942,
+   "ece": 0.0807,
+   "top3": 0.985,
+   "coverage": [
+    {
+     "t": 0.0,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.02,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.04,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.06,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.08,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.1,
+     "coverage": 1.0,
+     "accuracy": 0.9441,
+     "n": 1001
+    },
+    {
+     "t": 0.12,
+     "coverage": 0.999,
+     "accuracy": 0.945,
+     "n": 1000
+    },
+    {
+     "t": 0.14,
+     "coverage": 0.999,
+     "accuracy": 0.945,
+     "n": 1000
+    },
+    {
+     "t": 0.16,
+     "coverage": 0.999,
+     "accuracy": 0.945,
+     "n": 1000
+    },
+    {
+     "t": 0.18,
+     "coverage": 0.998,
+     "accuracy": 0.9449,
+     "n": 999
+    },
+    {
+     "t": 0.2,
+     "coverage": 0.995,
+     "accuracy": 0.9468,
+     "n": 996
+    },
+    {
+     "t": 0.22,
+     "coverage": 0.995,
+     "accuracy": 0.9468,
+     "n": 996
+    },
+    {
+     "t": 0.24,
+     "coverage": 0.991,
+     "accuracy": 0.9496,
+     "n": 992
+    },
+    {
+     "t": 0.26,
+     "coverage": 0.989,
+     "accuracy": 0.9515,
+     "n": 990
+    },
+    {
+     "t": 0.28,
+     "coverage": 0.982,
+     "accuracy": 0.9542,
+     "n": 983
+    },
+    {
+     "t": 0.3,
+     "coverage": 0.975,
+     "accuracy": 0.957,
+     "n": 976
+    },
+    {
+     "t": 0.32,
+     "coverage": 0.972,
+     "accuracy": 0.9568,
+     "n": 973
+    },
+    {
+     "t": 0.34,
+     "coverage": 0.969,
+     "accuracy": 0.9567,
+     "n": 970
+    },
+    {
+     "t": 0.36,
+     "coverage": 0.964,
+     "accuracy": 0.9575,
+     "n": 965
+    },
+    {
+     "t": 0.38,
+     "coverage": 0.959,
+     "accuracy": 0.9604,
+     "n": 960
+    },
+    {
+     "t": 0.4,
+     "coverage": 0.958,
+     "accuracy": 0.9604,
+     "n": 959
+    },
+    {
+     "t": 0.42,
+     "coverage": 0.956,
+     "accuracy": 0.9603,
+     "n": 957
+    },
+    {
+     "t": 0.44,
+     "coverage": 0.9461,
+     "accuracy": 0.9641,
+     "n": 947
+    },
+    {
+     "t": 0.46,
+     "coverage": 0.9411,
+     "accuracy": 0.9671,
+     "n": 942
+    },
+    {
+     "t": 0.48,
+     "coverage": 0.9331,
+     "accuracy": 0.9668,
+     "n": 934
+    },
+    {
+     "t": 0.5,
+     "coverage": 0.9301,
+     "accuracy": 0.9689,
+     "n": 931
+    },
+    {
+     "t": 0.52,
+     "coverage": 0.9251,
+     "accuracy": 0.973,
+     "n": 926
+    },
+    {
+     "t": 0.54,
+     "coverage": 0.9201,
+     "accuracy": 0.975,
+     "n": 921
+    },
+    {
+     "t": 0.56,
+     "coverage": 0.9151,
+     "accuracy": 0.976,
+     "n": 916
+    },
+    {
+     "t": 0.58,
+     "coverage": 0.9091,
+     "accuracy": 0.978,
+     "n": 910
+    },
+    {
+     "t": 0.6,
+     "coverage": 0.9021,
+     "accuracy": 0.979,
+     "n": 903
+    },
+    {
+     "t": 0.62,
+     "coverage": 0.8951,
+     "accuracy": 0.981,
+     "n": 896
+    },
+    {
+     "t": 0.64,
+     "coverage": 0.8911,
+     "accuracy": 0.9821,
+     "n": 892
+    },
+    {
+     "t": 0.66,
+     "coverage": 0.8841,
+     "accuracy": 0.9819,
+     "n": 885
+    },
+    {
+     "t": 0.68,
+     "coverage": 0.8731,
+     "accuracy": 0.9828,
+     "n": 874
+    },
+    {
+     "t": 0.7,
+     "coverage": 0.8691,
+     "accuracy": 0.9828,
+     "n": 870
+    },
+    {
+     "t": 0.72,
+     "coverage": 0.8571,
+     "accuracy": 0.9848,
+     "n": 858
+    },
+    {
+     "t": 0.74,
+     "coverage": 0.8462,
+     "accuracy": 0.9858,
+     "n": 847
+    },
+    {
+     "t": 0.76,
+     "coverage": 0.8362,
+     "accuracy": 0.9857,
+     "n": 837
+    },
+    {
+     "t": 0.78,
+     "coverage": 0.8272,
+     "accuracy": 0.9855,
+     "n": 828
+    },
+    {
+     "t": 0.8,
+     "coverage": 0.8102,
+     "accuracy": 0.9889,
+     "n": 811
+    },
+    {
+     "t": 0.82,
+     "coverage": 0.7952,
+     "accuracy": 0.9912,
+     "n": 796
+    },
+    {
+     "t": 0.84,
+     "coverage": 0.7662,
+     "accuracy": 0.9935,
+     "n": 767
+    },
+    {
+     "t": 0.86,
+     "coverage": 0.7413,
+     "accuracy": 0.9946,
+     "n": 742
+    },
+    {
+     "t": 0.88,
+     "coverage": 0.7083,
+     "accuracy": 0.9958,
+     "n": 709
+    },
+    {
+     "t": 0.9,
+     "coverage": 0.6613,
+     "accuracy": 0.9955,
+     "n": 662
+    },
+    {
+     "t": 0.92,
+     "coverage": 0.5864,
+     "accuracy": 0.9966,
+     "n": 587
+    },
+    {
+     "t": 0.94,
+     "coverage": 0.4695,
+     "accuracy": 0.9957,
+     "n": 470
+    },
+    {
+     "t": 0.96,
+     "coverage": 0.2677,
+     "accuracy": 1.0,
+     "n": 268
+    },
+    {
+     "t": 0.98,
+     "coverage": 0.046,
+     "accuracy": 1.0,
+     "n": 46
+    }
+   ],
+   "vs_best": {
+    "only_best_right": 21,
+    "only_this_right": 10,
+    "p": 0.07076,
+    "p_holm": 0.07076,
+    "significant": false
+   }
+  },
+  {
+   "model": "liquid/d1.2-ultra",
+   "name": "Liquid D1.2 Ultra",
+   "kind": "decision",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.9091,
+   "ci": [
+    0.8897,
+    0.9254
+   ],
+   "macro_f1": 0.9062,
+   "invalid": 0,
+   "cost_per_1000": 0.0196,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 0.366,
+   "latency_p90_s": 0.629,
+   "confusions": [
+    [
+     "top_up_by_bank_transfer_charge\u2192transfer_into_account",
+     6
+    ],
+    [
+     "wrong_exchange_rate_for_cash_withdrawal\u2192cash_withdrawal_charge",
+     4
+    ],
+    [
+     "direct_debit_payment_not_recognised\u2192card_payment_not_recognised",
+     3
+    ],
+    [
+     "wrong_amount_of_cash_received\u2192declined_cash_withdrawal",
+     2
+    ],
+    [
+     "top_up_by_cash_or_cheque\u2192topping_up_by_card",
+     2
+    ]
+   ],
+   "vendor_macro_f1": null,
+   "ece": 0.051,
+   "top3": 0.981,
+   "coverage": [
+    {
+     "t": 0.0,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.02,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.04,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.06,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.08,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.1,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.12,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.14,
+     "coverage": 1.0,
+     "accuracy": 0.9091,
+     "n": 1001
+    },
+    {
+     "t": 0.16,
+     "coverage": 0.999,
+     "accuracy": 0.909,
+     "n": 1000
+    },
+    {
+     "t": 0.18,
+     "coverage": 0.999,
+     "accuracy": 0.909,
+     "n": 1000
+    },
+    {
+     "t": 0.2,
+     "coverage": 0.999,
+     "accuracy": 0.909,
+     "n": 1000
+    },
+    {
+     "t": 0.22,
+     "coverage": 0.999,
+     "accuracy": 0.909,
+     "n": 1000
+    },
+    {
+     "t": 0.24,
+     "coverage": 0.996,
+     "accuracy": 0.9107,
+     "n": 997
+    },
+    {
+     "t": 0.26,
+     "coverage": 0.994,
+     "accuracy": 0.9126,
+     "n": 995
+    },
+    {
+     "t": 0.28,
+     "coverage": 0.994,
+     "accuracy": 0.9126,
+     "n": 995
+    },
+    {
+     "t": 0.3,
+     "coverage": 0.991,
+     "accuracy": 0.9143,
+     "n": 992
+    },
+    {
+     "t": 0.32,
+     "coverage": 0.988,
+     "accuracy": 0.9171,
+     "n": 989
+    },
+    {
+     "t": 0.34,
+     "coverage": 0.983,
+     "accuracy": 0.9207,
+     "n": 984
+    },
+    {
+     "t": 0.36,
+     "coverage": 0.978,
+     "accuracy": 0.9234,
+     "n": 979
+    },
+    {
+     "t": 0.38,
+     "coverage": 0.975,
+     "accuracy": 0.9232,
+     "n": 976
+    },
+    {
+     "t": 0.4,
+     "coverage": 0.967,
+     "accuracy": 0.9267,
+     "n": 968
+    },
+    {
+     "t": 0.42,
+     "coverage": 0.963,
+     "accuracy": 0.9305,
+     "n": 964
+    },
+    {
+     "t": 0.44,
+     "coverage": 0.954,
+     "accuracy": 0.933,
+     "n": 955
+    },
+    {
+     "t": 0.46,
+     "coverage": 0.9451,
+     "accuracy": 0.9387,
+     "n": 946
+    },
+    {
+     "t": 0.48,
+     "coverage": 0.9381,
+     "accuracy": 0.9414,
+     "n": 939
+    },
+    {
+     "t": 0.5,
+     "coverage": 0.9281,
+     "accuracy": 0.944,
+     "n": 929
+    },
+    {
+     "t": 0.52,
+     "coverage": 0.9181,
+     "accuracy": 0.9445,
+     "n": 919
+    },
+    {
+     "t": 0.54,
+     "coverage": 0.9121,
+     "accuracy": 0.9463,
+     "n": 913
+    },
+    {
+     "t": 0.56,
+     "coverage": 0.9051,
+     "accuracy": 0.9492,
+     "n": 906
+    },
+    {
+     "t": 0.58,
+     "coverage": 0.8961,
+     "accuracy": 0.9543,
+     "n": 897
+    },
+    {
+     "t": 0.6,
+     "coverage": 0.8901,
+     "accuracy": 0.9562,
+     "n": 891
+    },
+    {
+     "t": 0.62,
+     "coverage": 0.8801,
+     "accuracy": 0.958,
+     "n": 881
+    },
+    {
+     "t": 0.64,
+     "coverage": 0.8721,
+     "accuracy": 0.9576,
+     "n": 873
+    },
+    {
+     "t": 0.66,
+     "coverage": 0.8641,
+     "accuracy": 0.9572,
+     "n": 865
+    },
+    {
+     "t": 0.68,
+     "coverage": 0.8551,
+     "accuracy": 0.9591,
+     "n": 856
+    },
+    {
+     "t": 0.7,
+     "coverage": 0.8442,
+     "accuracy": 0.9621,
+     "n": 845
+    },
+    {
+     "t": 0.72,
+     "coverage": 0.8312,
+     "accuracy": 0.9663,
+     "n": 832
+    },
+    {
+     "t": 0.74,
+     "coverage": 0.8212,
+     "accuracy": 0.9708,
+     "n": 822
+    },
+    {
+     "t": 0.76,
+     "coverage": 0.8092,
+     "accuracy": 0.9728,
+     "n": 810
+    },
+    {
+     "t": 0.78,
+     "coverage": 0.7892,
+     "accuracy": 0.9797,
+     "n": 790
+    },
+    {
+     "t": 0.8,
+     "coverage": 0.7692,
+     "accuracy": 0.9805,
+     "n": 770
+    },
+    {
+     "t": 0.82,
+     "coverage": 0.7512,
+     "accuracy": 0.9827,
+     "n": 752
+    },
+    {
+     "t": 0.84,
+     "coverage": 0.7223,
+     "accuracy": 0.9862,
+     "n": 723
+    },
+    {
+     "t": 0.86,
+     "coverage": 0.6943,
+     "accuracy": 0.9899,
+     "n": 695
+    },
+    {
+     "t": 0.88,
+     "coverage": 0.6593,
+     "accuracy": 0.9894,
+     "n": 660
+    },
+    {
+     "t": 0.9,
+     "coverage": 0.6074,
+     "accuracy": 0.9951,
+     "n": 608
+    },
+    {
+     "t": 0.92,
+     "coverage": 0.5584,
+     "accuracy": 0.9964,
+     "n": 559
+    },
+    {
+     "t": 0.94,
+     "coverage": 0.4675,
+     "accuracy": 0.9979,
+     "n": 468
+    },
+    {
+     "t": 0.96,
+     "coverage": 0.3487,
+     "accuracy": 0.9971,
+     "n": 349
+    },
+    {
+     "t": 0.98,
+     "coverage": 0.1489,
+     "accuracy": 1.0,
+     "n": 149
+    }
+   ],
+   "vs_best": {
+    "only_best_right": 53,
+    "only_this_right": 7,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  },
+  {
+   "model": "liquid/d1.2",
+   "name": "Liquid D1.2",
+   "kind": "decision",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.8811,
+   "ci": [
+    0.8596,
+    0.8997
+   ],
+   "macro_f1": 0.8775,
+   "invalid": 0,
+   "cost_per_1000": 0.0093,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 0.36,
+   "latency_p90_s": 1.188,
+   "confusions": [
+    [
+     "top_up_by_bank_transfer_charge\u2192transfer_into_account",
+     6
+    ],
+    [
+     "direct_debit_payment_not_recognised\u2192card_payment_not_recognised",
+     6
+    ],
+    [
+     "wrong_exchange_rate_for_cash_withdrawal\u2192cash_withdrawal_charge",
+     6
+    ],
+    [
+     "order_physical_card\u2192get_physical_card",
+     4
+    ],
+    [
+     "unable_to_verify_identity\u2192verify_my_identity",
+     3
+    ]
+   ],
+   "vendor_macro_f1": null,
+   "ece": 0.0972,
+   "top3": 0.974,
+   "coverage": [
+    {
+     "t": 0.0,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.02,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.04,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.06,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.08,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.1,
+     "coverage": 1.0,
+     "accuracy": 0.8811,
+     "n": 1001
+    },
+    {
+     "t": 0.12,
+     "coverage": 0.999,
+     "accuracy": 0.882,
+     "n": 1000
+    },
+    {
+     "t": 0.14,
+     "coverage": 0.997,
+     "accuracy": 0.8838,
+     "n": 998
+    },
+    {
+     "t": 0.16,
+     "coverage": 0.997,
+     "accuracy": 0.8838,
+     "n": 998
+    },
+    {
+     "t": 0.18,
+     "coverage": 0.996,
+     "accuracy": 0.8847,
+     "n": 997
+    },
+    {
+     "t": 0.2,
+     "coverage": 0.994,
+     "accuracy": 0.8864,
+     "n": 995
+    },
+    {
+     "t": 0.22,
+     "coverage": 0.988,
+     "accuracy": 0.8888,
+     "n": 989
+    },
+    {
+     "t": 0.24,
+     "coverage": 0.987,
+     "accuracy": 0.8897,
+     "n": 988
+    },
+    {
+     "t": 0.26,
+     "coverage": 0.981,
+     "accuracy": 0.891,
+     "n": 982
+    },
+    {
+     "t": 0.28,
+     "coverage": 0.975,
+     "accuracy": 0.8955,
+     "n": 976
+    },
+    {
+     "t": 0.3,
+     "coverage": 0.967,
+     "accuracy": 0.8977,
+     "n": 968
+    },
+    {
+     "t": 0.32,
+     "coverage": 0.961,
+     "accuracy": 0.8992,
+     "n": 962
+    },
+    {
+     "t": 0.34,
+     "coverage": 0.951,
+     "accuracy": 0.9065,
+     "n": 952
+    },
+    {
+     "t": 0.36,
+     "coverage": 0.9421,
+     "accuracy": 0.9109,
+     "n": 943
+    },
+    {
+     "t": 0.38,
+     "coverage": 0.9331,
+     "accuracy": 0.9143,
+     "n": 934
+    },
+    {
+     "t": 0.4,
+     "coverage": 0.9211,
+     "accuracy": 0.9176,
+     "n": 922
+    },
+    {
+     "t": 0.42,
+     "coverage": 0.9131,
+     "accuracy": 0.9212,
+     "n": 914
+    },
+    {
+     "t": 0.44,
+     "coverage": 0.9041,
+     "accuracy": 0.9249,
+     "n": 905
+    },
+    {
+     "t": 0.46,
+     "coverage": 0.8921,
+     "accuracy": 0.9283,
+     "n": 893
+    },
+    {
+     "t": 0.48,
+     "coverage": 0.8811,
+     "accuracy": 0.9308,
+     "n": 882
+    },
+    {
+     "t": 0.5,
+     "coverage": 0.8651,
+     "accuracy": 0.9365,
+     "n": 866
+    },
+    {
+     "t": 0.52,
+     "coverage": 0.8541,
+     "accuracy": 0.938,
+     "n": 855
+    },
+    {
+     "t": 0.54,
+     "coverage": 0.8442,
+     "accuracy": 0.9408,
+     "n": 845
+    },
+    {
+     "t": 0.56,
+     "coverage": 0.8292,
+     "accuracy": 0.9446,
+     "n": 830
+    },
+    {
+     "t": 0.58,
+     "coverage": 0.8182,
+     "accuracy": 0.9451,
+     "n": 819
+    },
+    {
+     "t": 0.6,
+     "coverage": 0.8042,
+     "accuracy": 0.9516,
+     "n": 805
+    },
+    {
+     "t": 0.62,
+     "coverage": 0.7872,
+     "accuracy": 0.9594,
+     "n": 788
+    },
+    {
+     "t": 0.64,
+     "coverage": 0.7722,
+     "accuracy": 0.9638,
+     "n": 773
+    },
+    {
+     "t": 0.66,
+     "coverage": 0.7572,
+     "accuracy": 0.967,
+     "n": 758
+    },
+    {
+     "t": 0.68,
+     "coverage": 0.7463,
+     "accuracy": 0.9719,
+     "n": 747
+    },
+    {
+     "t": 0.7,
+     "coverage": 0.7283,
+     "accuracy": 0.9739,
+     "n": 729
+    },
+    {
+     "t": 0.72,
+     "coverage": 0.7073,
+     "accuracy": 0.9746,
+     "n": 708
+    },
+    {
+     "t": 0.74,
+     "coverage": 0.6813,
+     "accuracy": 0.9795,
+     "n": 682
+    },
+    {
+     "t": 0.76,
+     "coverage": 0.6553,
+     "accuracy": 0.9802,
+     "n": 656
+    },
+    {
+     "t": 0.78,
+     "coverage": 0.6284,
+     "accuracy": 0.9809,
+     "n": 629
+    },
+    {
+     "t": 0.8,
+     "coverage": 0.6114,
+     "accuracy": 0.9837,
+     "n": 612
+    },
+    {
+     "t": 0.82,
+     "coverage": 0.5874,
+     "accuracy": 0.983,
+     "n": 588
+    },
+    {
+     "t": 0.84,
+     "coverage": 0.5475,
+     "accuracy": 0.9872,
+     "n": 548
+    },
+    {
+     "t": 0.86,
+     "coverage": 0.5125,
+     "accuracy": 0.9903,
+     "n": 513
+    },
+    {
+     "t": 0.88,
+     "coverage": 0.4785,
+     "accuracy": 0.9937,
+     "n": 479
+    },
+    {
+     "t": 0.9,
+     "coverage": 0.4276,
+     "accuracy": 0.9953,
+     "n": 428
+    },
+    {
+     "t": 0.92,
+     "coverage": 0.3756,
+     "accuracy": 0.9973,
+     "n": 376
+    },
+    {
+     "t": 0.94,
+     "coverage": 0.3027,
+     "accuracy": 0.9967,
+     "n": 303
+    },
+    {
+     "t": 0.96,
+     "coverage": 0.2088,
+     "accuracy": 0.9952,
+     "n": 209
+    },
+    {
+     "t": 0.98,
+     "coverage": 0.0779,
+     "accuracy": 1.0,
+     "n": 78
+    }
+   ],
+   "vs_best": {
+    "only_best_right": 81,
+    "only_this_right": 7,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "name": "DeepSeek V4.1 Flash",
+   "kind": "llm",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.8212,
+   "ci": [
+    0.7962,
+    0.8437
+   ],
+   "macro_f1": 0.8143,
+   "invalid": 5,
+   "cost_per_1000": 0.0927,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 1.178,
+   "latency_p90_s": 3.491,
+   "confusions": [
+    [
+     "card_arrival\u2192card_delivery_estimate",
+     8
+    ],
+    [
+     "order_physical_card\u2192get_physical_card",
+     8
+    ],
+    [
+     "direct_debit_payment_not_recognised\u2192card_payment_not_recognised",
+     7
+    ],
+    [
+     "get_physical_card\u2192passcode_forgotten",
+     7
+    ],
+    [
+     "wrong_exchange_rate_for_cash_withdrawal\u2192cash_withdrawal_charge",
+     6
+    ]
+   ],
+   "vendor_macro_f1": null,
+   "vs_best": {
+    "only_best_right": 144,
+    "only_this_right": 10,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  },
+  {
+   "model": "codex:gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "kind": "llm",
+   "via": "codex CLI",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.8022,
+   "ci": [
+    0.7764,
+    0.8257
+   ],
+   "macro_f1": 0.7943,
+   "invalid": 1,
+   "cost_per_1000": 0.0665,
+   "cost_kind": "estimated from list price",
+   "latency_median_s": null,
+   "latency_p90_s": null,
+   "confusions": [
+    [
+     "get_physical_card\u2192change_pin",
+     12
+    ],
+    [
+     "order_physical_card\u2192get_physical_card",
+     9
+    ],
+    [
+     "card_arrival\u2192card_delivery_estimate",
+     9
+    ],
+    [
+     "wrong_exchange_rate_for_cash_withdrawal\u2192cash_withdrawal_charge",
+     6
+    ],
+    [
+     "compromised_card\u2192card_payment_not_recognised",
+     5
+    ]
+   ],
+   "vendor_macro_f1": null,
+   "vs_best": {
+    "only_best_right": 160,
+    "only_this_right": 7,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  },
+  {
+   "model": "typesafe/jev-1.14",
+   "name": "Typesafe Jev 1.14",
+   "kind": "decision",
+   "via": "OpenRouter API",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.7962,
+   "ci": [
+    0.7701,
+    0.82
+   ],
+   "macro_f1": 0.7871,
+   "invalid": 0,
+   "cost_per_1000": 0.0709,
+   "cost_kind": "billed by OpenRouter",
+   "latency_median_s": 0.796,
+   "latency_p90_s": 2.468,
+   "confusions": [
+    [
+     "get_physical_card\u2192change_pin",
+     12
+    ],
+    [
+     "order_physical_card\u2192get_physical_card",
+     10
+    ],
+    [
+     "wrong_exchange_rate_for_cash_withdrawal\u2192cash_withdrawal_charge",
+     6
+    ],
+    [
+     "top_up_by_bank_transfer_charge\u2192transfer_into_account",
+     6
+    ],
+    [
+     "direct_debit_payment_not_recognised\u2192card_payment_not_recognised",
+     6
+    ]
+   ],
+   "vendor_macro_f1": 0.7974,
+   "ece": 0.0713,
+   "top3": 0.9161,
+   "coverage": [
+    {
+     "t": 0.0,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.02,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.04,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.06,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.08,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.1,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.12,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.14,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.16,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.18,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.2,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.22,
+     "coverage": 1.0,
+     "accuracy": 0.7962,
+     "n": 1001
+    },
+    {
+     "t": 0.24,
+     "coverage": 0.999,
+     "accuracy": 0.797,
+     "n": 1000
+    },
+    {
+     "t": 0.26,
+     "coverage": 0.999,
+     "accuracy": 0.797,
+     "n": 1000
+    },
+    {
+     "t": 0.28,
+     "coverage": 0.999,
+     "accuracy": 0.797,
+     "n": 1000
+    },
+    {
+     "t": 0.3,
+     "coverage": 0.997,
+     "accuracy": 0.7986,
+     "n": 998
+    },
+    {
+     "t": 0.32,
+     "coverage": 0.997,
+     "accuracy": 0.7986,
+     "n": 998
+    },
+    {
+     "t": 0.34,
+     "coverage": 0.992,
+     "accuracy": 0.8016,
+     "n": 993
+    },
+    {
+     "t": 0.36,
+     "coverage": 0.99,
+     "accuracy": 0.8032,
+     "n": 991
+    },
+    {
+     "t": 0.38,
+     "coverage": 0.985,
+     "accuracy": 0.8073,
+     "n": 986
+    },
+    {
+     "t": 0.4,
+     "coverage": 0.98,
+     "accuracy": 0.8104,
+     "n": 981
+    },
+    {
+     "t": 0.42,
+     "coverage": 0.977,
+     "accuracy": 0.8108,
+     "n": 978
+    },
+    {
+     "t": 0.44,
+     "coverage": 0.973,
+     "accuracy": 0.8121,
+     "n": 974
+    },
+    {
+     "t": 0.46,
+     "coverage": 0.969,
+     "accuracy": 0.8134,
+     "n": 970
+    },
+    {
+     "t": 0.48,
+     "coverage": 0.964,
+     "accuracy": 0.8166,
+     "n": 965
+    },
+    {
+     "t": 0.5,
+     "coverage": 0.952,
+     "accuracy": 0.8206,
+     "n": 953
+    },
+    {
+     "t": 0.52,
+     "coverage": 0.9261,
+     "accuracy": 0.8317,
+     "n": 927
+    },
+    {
+     "t": 0.54,
+     "coverage": 0.9111,
+     "accuracy": 0.8377,
+     "n": 912
+    },
+    {
+     "t": 0.56,
+     "coverage": 0.8891,
+     "accuracy": 0.8483,
+     "n": 890
+    },
+    {
+     "t": 0.58,
+     "coverage": 0.8781,
+     "accuracy": 0.8544,
+     "n": 879
+    },
+    {
+     "t": 0.6,
+     "coverage": 0.8601,
+     "accuracy": 0.8618,
+     "n": 861
+    },
+    {
+     "t": 0.62,
+     "coverage": 0.8571,
+     "accuracy": 0.8625,
+     "n": 858
+    },
+    {
+     "t": 0.64,
+     "coverage": 0.8392,
+     "accuracy": 0.8667,
+     "n": 840
+    },
+    {
+     "t": 0.66,
+     "coverage": 0.8212,
+     "accuracy": 0.8747,
+     "n": 822
+    },
+    {
+     "t": 0.68,
+     "coverage": 0.8112,
+     "accuracy": 0.8805,
+     "n": 812
+    },
+    {
+     "t": 0.7,
+     "coverage": 0.7992,
+     "accuracy": 0.885,
+     "n": 800
+    },
+    {
+     "t": 0.72,
+     "coverage": 0.7882,
+     "accuracy": 0.8885,
+     "n": 789
+    },
+    {
+     "t": 0.74,
+     "coverage": 0.7722,
+     "accuracy": 0.8965,
+     "n": 773
+    },
+    {
+     "t": 0.76,
+     "coverage": 0.7622,
+     "accuracy": 0.9017,
+     "n": 763
+    },
+    {
+     "t": 0.78,
+     "coverage": 0.7502,
+     "accuracy": 0.9055,
+     "n": 751
+    },
+    {
+     "t": 0.8,
+     "coverage": 0.7363,
+     "accuracy": 0.9118,
+     "n": 737
+    },
+    {
+     "t": 0.82,
+     "coverage": 0.7183,
+     "accuracy": 0.9193,
+     "n": 719
+    },
+    {
+     "t": 0.84,
+     "coverage": 0.6913,
+     "accuracy": 0.9321,
+     "n": 692
+    },
+    {
+     "t": 0.86,
+     "coverage": 0.6823,
+     "accuracy": 0.9327,
+     "n": 683
+    },
+    {
+     "t": 0.88,
+     "coverage": 0.6613,
+     "accuracy": 0.9381,
+     "n": 662
+    },
+    {
+     "t": 0.9,
+     "coverage": 0.6434,
+     "accuracy": 0.941,
+     "n": 644
+    },
+    {
+     "t": 0.92,
+     "coverage": 0.6154,
+     "accuracy": 0.9464,
+     "n": 616
+    },
+    {
+     "t": 0.94,
+     "coverage": 0.5884,
+     "accuracy": 0.9508,
+     "n": 589
+    },
+    {
+     "t": 0.96,
+     "coverage": 0.5584,
+     "accuracy": 0.9589,
+     "n": 559
+    },
+    {
+     "t": 0.98,
+     "coverage": 0.4885,
+     "accuracy": 0.9714,
+     "n": 489
+    }
+   ],
+   "vs_best": {
+    "only_best_right": 164,
+    "only_this_right": 5,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  },
+  {
+   "model": "claude:claude-haiku-5-5",
+   "name": "Claude Haiku 5.5",
+   "kind": "llm",
+   "via": "Claude Code CLI",
+   "n": 1001,
+   "errors": 0,
+   "accuracy": 0.6374,
+   "ci": [
+    0.6071,
+    0.6666
+   ],
+   "macro_f1": 0.6292,
+   "invalid": 10,
+   "cost_per_1000": 0.0666,
+   "cost_kind": "estimated from list price",
+   "latency_median_s": null,
+   "latency_p90_s": null,
+   "confusions": [
+    [
+     "get_physical_card\u2192change_pin",
+     12
+    ],
+    [
+     "why_verify_identity\u2192verify_my_identity",
+     9
+    ],
+    [
+     "getting_virtual_card\u2192get_virtual_card",
+     8
+    ],
+    [
+     "visa_or_mastercard\u2192supported_cards_and_currencies",
+     8
+    ],
+    [
+     "getting_spare_card\u2192order_physical_card",
+     7
+    ]
+   ],
+   "vendor_macro_f1": null,
+   "vs_best": {
+    "only_best_right": 327,
+    "only_this_right": 9,
+    "p": 0.0,
+    "p_holm": 0.0,
+    "significant": true
+   }
+  }
+ ],
+ "order_check": {
+  "deepseek/deepseek-v4.1-flash-1017": {
+   "accuracy_shuffled": 0.8152,
+   "accuracy_original": 0.8212,
+   "same_answer": 0.9301,
+   "n": 1001
+  }
+ },
+ "references": [
+  {
+   "label": "Fine-tuned BERT (all 10k training examples)",
+   "short": "Fine-tuned BERT",
+   "value": 0.9366,
+   "metric": "accuracy",
+   "source": "Casanueva et al. 2020, Table 3",
+   "url": "https://arxiv.org/abs/2003.04807"
+  },
+  {
+   "label": "GPT-4, one example per intent in the prompt",
+   "short": "GPT-4, 1-shot",
+   "value": 0.804,
+   "metric": "micro-F1 (= accuracy)",
+   "source": "Loukas et al. 2023, Table 4",
+   "url": "https://arxiv.org/abs/2311.06102"
+  },
+  {
+   "label": "Claude 2, one example per intent in the prompt",
+   "short": "Claude 2, 1-shot",
+   "value": 0.768,
+   "metric": "micro-F1 (= accuracy)",
+   "source": "Loukas et al. 2023, Table 4",
+   "url": "https://arxiv.org/abs/2311.06102"
+  }
+ ],
+ "vendor_url": "https://blog.cloudflare.com/clef-decision-models"
+}
