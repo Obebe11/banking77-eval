@@ -1,5 +1,7 @@
 # BANKING77: decision models vs. LLMs
 
+Full write-up & interactive charts: **[www.obi4.xyz/posts/banking77-decision-models.html](https://www.obi4.xyz/posts/banking77-decision-models.html)** · Services & $99 bot audit: **[www.obi4.xyz](https://www.obi4.xyz/)**
+
 1,001 messages from the official test split of [PolyAI/banking77](https://huggingface.co/datasets/PolyAI/banking77)
 (CC BY 4.0), 13 per intent, seed 42. Every model gets the message and the 77 intent names, zero-shot.
 
